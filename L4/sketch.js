@@ -8,8 +8,8 @@ function preload() {
   teapot = loadModel('objs/teapot.obj');
   song = loadSound('mp3s/TheCaretakerTheirStoryIsLost.mp4');
   
-  objs.push(loadModel("objs/justice-ODouglas.obj"));
-  /*objs.push(loadModel("objs/kogan2Mal.obj"));
+  /*objs.push(loadModel("objs/justice-ODouglas.obj"));
+  objs.push(loadModel("objs/kogan2Mal.obj"));
   objs.push(loadModel("objs/painter.obj"));
   objs.push(loadModel("objs/eternal-Kiss.obj"));
   objs.push(loadModel("objs/twoareone.obj"));
