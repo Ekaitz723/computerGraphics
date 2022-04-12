@@ -8,7 +8,8 @@ let angle = 0;
 let blinn_phong;
 
 function preload() {
-  teapot = loadModel('objs/teapot.obj');
+  //teapot = loadModel('objs/teapot.obj');
+  teapot = loadModel("objs/justice-ODouglas.obj");
   song = loadSound('mp3s/TheCaretakerTheirStoryIsLost.mp4');
   
   /*objs.push(loadModel("objs/justice-ODouglas.obj"));
