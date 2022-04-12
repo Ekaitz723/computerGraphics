@@ -9,14 +9,14 @@ let blinn_phong;
 
 function preload() {
   //teapot = loadModel('objs/teapot.obj');
-  teapot = loadModel("objs/justice-ODouglas.obj");
+  //teapot = loadModel("objs/justice-ODouglas.obj");
   song = loadSound('mp3s/TheCaretakerTheirStoryIsLost.mp4');
   
-  /*objs.push(loadModel("objs/justice-ODouglas.obj"));
+  objs.push(loadModel("objs/justice-ODouglas.obj"));
   objs.push(loadModel("objs/kogan2.obj"));
   objs.push(loadModel("objs/painter.obj"));
   objs.push(loadModel("objs/twoareone.obj"));
-  objs.push(loadModel("objs/noAnswer.obj"));*/
+  objs.push(loadModel("objs/noAnswer.obj"));
   
   names.push(loadSound('mp3s/kogan2.mp3'));
   names.push(loadSound('mp3s/justice-ODouglas.mp3'));
@@ -46,7 +46,7 @@ function draw() {
   ellipse(random(width),random(height),5,5);
   ellipse(random(width),random(height),5,5);
   colorMode(RGB, 1);
-  scale(10);
+  scale(100);
   // set light
   ambientLight(0.2); //La
   specularColor(1, 1, 1); // Ls
@@ -56,13 +56,11 @@ function draw() {
   rotateY(-rx);
   let ry = map(mouseY, 0, height, -radians(50), radians(50));
   rotateX(HALF_PI-ry);
-  // display mona lisa
+  
   noStroke();
   beginShape();
-  //texture(mona);
-  //plane(184, 274, 100, 100);
-  model(teapot);
-  
+  //model(teapot);
+  model(objs[whichObj]);
   endShape();
   // let mouse Y control color hue
   let hy = map(mouseY, 0, height, 1, 360/2);
