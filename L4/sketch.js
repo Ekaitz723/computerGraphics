@@ -46,7 +46,7 @@ function draw() {
   ellipse(random(width),random(height),5,5);
   ellipse(random(width),random(height),5,5);
   colorMode(RGB, 1);
-  scale(100);
+  scale(0.1);
   // set light
   ambientLight(0.2); //La
   specularColor(1, 1, 1); // Ls
